@@ -27,8 +27,18 @@ public class SbJpaPaggingShortingApplication {
 //		Book bk3= new Book(6,"Maven",2500.0);
 //		Book bk4 = new Book(7,"JIra",5500.0);
 //		Book bk5 = new Book(8,"JDBC",6500.0);
-//		
+		
+		
 //		List<Book> list = bean.saveAll(Arrays.asList(bk,bk1,bk2,bk3,bk4,bk5));
+		
+		
+		
+		Book bk=new Book();
+		bk.setBookId(2);
+		bk.setBookName("Django");
+		bk.setBookPrice(3000.00);
+		bean.save(bk);
+		
 		
 //		+++++++++++++++++Sorting+++++++++++++++++++++++++++++++
 //		Sort by = Sort.by("bookPrice").descending();
@@ -47,12 +57,14 @@ public class SbJpaPaggingShortingApplication {
 //		Page<Book> all = bean.findAll(of);
 //		all.forEach(System.out::println);
 		
-		Book bk = new Book();
-		bk.setBookName("java");
+//+++++++++++++++++++++++++++	Query By Example++++++++++++++++++++++++++++++++++++++
 		
-		Example<Book> of = Example.of(bk);
-		List<Book> list = bean.findAll(of);
-		list.forEach(System.out::println);
+//		Book bk = new Book();
+//		bk.setBookName("java");
+//		
+//		Example<Book> of = Example.of(bk);
+//		List<Book> list = bean.findAll(of);
+//		list.forEach(System.out::println);
 		
 		}
 		
