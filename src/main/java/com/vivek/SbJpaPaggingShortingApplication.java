@@ -34,9 +34,9 @@ public class SbJpaPaggingShortingApplication {
 		
 		
 		Book bk=new Book();
-		bk.setBookId(2);
-		bk.setBookName("Django");
-		bk.setBookPrice(3000.00);
+		
+		bk.setBookName("Core Java");
+		bk.setBookPrice(5000.00);
 		bean.save(bk);
 		
 		
